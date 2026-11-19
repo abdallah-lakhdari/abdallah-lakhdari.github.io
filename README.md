@@ -1,28 +1,17 @@
-# Abdallah Lakhdari — Academic Website
+# Abdallah Lakhdari Academic Homepage
 
-This is a static academic homepage consisting of `index.html`, `styles.css`, `script.js` and `assets/abdallah-lakhdari.png`.
+This folder contains a self-contained academic website with a responsive editorial layout. It is standard HTML, CSS, and JavaScript and does not require a build step or subscription.
 
-## Preview locally
+## Edit locally
+1. Open `index.html` in your browser to preview.
+2. Open the folder as a project in Pinegrow to edit content or visual styling. All sections are standard HTML.
+3. Edit `styles.css` for spacing, typography, or colours. The portrait is located at `assets/abdallah-lakhdari.png`.
+4. Test at mobile and desktop widths before publishing.
 
-Open `index.html` in any web browser. No build process, accounts or dependencies are needed.
+## Publish to GitHub Pages
+When you choose to publish, place `index.html`, `styles.css`, `script.js` and `assets/` at the root of your `abdallah-lakhdari.github.io` repository. Enable GitHub Pages from `main` / root. No CV is included.
 
-## Edit with Pinegrow
+## External profile links
+Google Scholar currently uses the existing public short link `https://tinyurl.com/abdscholar`, which has been checked to open the author's Scholar profile. If you prefer, replace it with your direct Scholar profile URL later.
 
-In Pinegrow, open this folder as a project and then open `index.html`. Save your changes to the local folder before uploading any files to GitHub.
-
-## Deploy to GitHub Pages
-
-Upload the **contents** of this folder (rather than the parent folder) to your `abdallah-lakhdari.github.io` repository. Ensure `index.html`, `styles.css`, `script.js` and `assets/` are at the repository root. Enable GitHub Pages only when you are ready to make the site public.
-
-## Contents
-
-- About
-- News & highlights (earlier years can be expanded)
-- Research & current directions
-- Selected publications
-- Selected projects
-- Teaching & mentoring
-- Recognition & service
-- Background
-
-The CV is deliberately not included in this package.
+This package does not change your GitHub repository or publish anything automatically.

@@ -1,13 +1,16 @@
-const btn = document.getElementById('menuButton');
-const nav = document.getElementById('mobileNav');
-if (btn && nav) {
-  btn.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    btn.setAttribute('aria-expanded', String(open));
+// Small, dependency-free navigation for mobile and compact screens.
+const menuButton = document.getElementById('menuButton');
+const siteNav = document.getElementById('siteNav');
+if (menuButton && siteNav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = siteNav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
   });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
+  siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    siteNav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded','false');
+    menuButton.setAttribute('aria-label','Open navigation');
   }));
 }
 const year = document.getElementById('year');
